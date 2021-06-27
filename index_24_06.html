@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Задание по форме</title>
+	<script>
+		function sizePic() {
+			size = document.getElementById("size").value;
+			img = document.getElementById("pic");
+			img.width = 60 + 20*size;
+		}
+	</script>
+	</head>
+<body>
+	<form style="text-align: center">
+	<table border="1" width="100%" cellpadding="5">
+		<tr>
+			<td>
+	<p><select name="select" size="1">
+		<option selected value="a1">Вариант №1</option>
+		<option value="a2">Вариант №2</option>
+		<option value="a3">Вариант №3</option>
+		<option value="a4">Вариант №4</option>
+		<option value="a5">Вариант №5</option>
+		</select>
+		<input type="Submit" value="Отправить"></p>
+			</td>
+			<td>
+	<p><select name="select" size="5" multiple>
+		<option selected value="a1">Вариант №1</option>
+		<option value="a2">Вариант №2</option>
+		<option value="a3">Вариант №3</option>
+		<option value="a4">Вариант №4</option>
+		<option value="a5">Вариант №5</option>
+		</select>
+		<input type="Submit" value="Отправить"></p>
+			</td>
+			<td>
+	<p><strong>Укажите цифру:</strong></p>
+	<p><input maxlength="25" size="5" value="4"></p>
+			</td>
+			<td>
+	<p><select name="select" size="1" multiple>
+		<option selected value="a1">Вариант №1</option>
+		<option value="a2">Вариант №2</option>
+		<option value="a3">Вариант №3</option>
+		<option value="a4">Вариант №4</option>
+		<option value="a5">Вариант №5</option>
+		</select></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+	<p><b>Размер рисунка:</b><input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3"></p>
+	<p><img src="https://i.pinimg.com/originals/b6/25/e8/b625e8f89436ec24e16d8cf48e5cd2a9.jpg" alt="мистер Джерри" width="200" height="200" id="pic"></p>
+			</td>
+			<td>
+	<p><button>Очистить</button></p>
+			</td>
+			<td>
+	<p><input type="search" name="poisk" placeholder="Поиск по сайту">
+	<input type="Submit" value="Найти"></p>
+			</td>
+			<td>
+	<p><b>Укажите цвет фона:</b> <input type="color" name="bg" value="#f50013">
+	<input type="Submit" value="Выбрать"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+	<p><b>Укажите</b></p>
+	<p><input type="radio" name="answer" value="a1"><strong>Radio BUTTON</strong><br>
+	<input type="radio" name="answer" value="a2"><strong>Radio BUTTON</strong><br>
+	<input type="radio" name="answer" value="a3"><strong>Radio BUTTON</strong></p>
+	<p><input type="Submit" value="Submit"></p>
+			</td>
+			<td>
+	<p><b>Введите текст:</b></p>
+	<p><textarea name="comment"></textarea></p>
+	<p><input type="Submit" value="Submit"></p>
+			</td>
+			<td>
+	<p><b>Укажите дату</b></p>
+	<p><input type="checkbox" name="a" value="2010"><b>2010</b></p>
+	<p><input type="checkbox" name="a" value="2014"><b>2014</b></p>
+	<p><input type="checkbox" name="a" value="2017"><b>2017</b></p>
+	<p><input type="checkbox" name="a" value="2019"><b>2019</b></p>
+	<p><input type="Submit" value="Отправить"></p>
+			</td>
+			<td>
+	<form enctype="multipart/form-data" method="post">
+	<p><b>Загрузите фотографии</b></p>
+	<p><input type="file" name="photo" multiple accept="image/*">
+	<input type="Submit" value="Отправить">
+    		</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
+
+
