@@ -1,0 +1,9 @@
+.label {
+	background: #FFB6C1;
+}
+
+label.label1 {
+	font-family: Times New Roman;
+	color: #008080;
+	font-size: 130%;	
+}
