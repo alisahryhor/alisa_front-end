@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box; 
 }
 
 body {
@@ -12,7 +13,12 @@ body {
 	background-color: #43afd0; 
 }
 
-.logo {
+.header {
+	display: flex;
+	margin: 20px;
+}
+
+.logo, .tel {
 	color: #fff;
 	font-size: 18px;
 	font-weight: 600;
@@ -23,19 +29,26 @@ body {
 	letter-spacing: 1px;
 }
 
-.tel_container {
-	font-size: 18px;
-	font-weight: 600;
-	/*color: #fff;*/
+.tel {
 	float: right;
 	padding-top: 0px;
 	letter-spacing: 1px;
-	/*vertical-align: top;*/
+	margin-right: 6px;
+	font-weight: 700;
 }
 
-/*nav {
-    float: right;
-}*/
+.nav_container {
+    display: block;
+    content: "";
+    clear: both;
+    margin-right: auto;
+}
+
+.nav_container img {
+	position: relative;
+	top: 10px;
+	margin-right: 8px;
+}
 
 ul li {
 	display: inline-block;
@@ -59,5 +72,12 @@ ul li a {
 
 a:hover {
 	color: #434f4f;
+}
+
+.button {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	font-size: 30px;
 }
 
