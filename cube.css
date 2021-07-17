@@ -1,0 +1,36 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.cube {
+	position: relative;
+	margin: 10%;
+	display: flex;
+	justify-content: center;
+}
+
+.cube_side {
+	height: 95px;
+	width: 95px;
+	position: absolute;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+}
+
+.top {
+	background-color: #33cc54;
+	transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.left {
+	background-color: #2db34a;
+	transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+
+.right {
+	background-color: #26973e;
+	transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+

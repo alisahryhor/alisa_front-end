@@ -10,34 +10,66 @@ body {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 .header {
-	background-color: #43afd0;
+	background-color: #43afd0; /*фон шапки*/
 }
 
 .header_container {
 	display: flex;
-	justify-content: space-between;
-	width: 1440px;
+	justify-content: space-between; /*выравнивание по краям*/
+	max-width: 1680px; /*ширина контейнера шапки по макету*/
+	height: 120px; /*высота контейнера шапки по макету*/
 	margin: auto;
-	padding: 20px 10px;
+	padding: 0px 120px;
+	align-items: center; /*выравнивание по центру попереч.оси (по вертикали)*/
 }
 
-.nav_container {
+.header_logo {
+	font-size: 20px; /*размер шрифта*/
+	font-weight: 600; /*жирность шрифта*/
+	display: flex;
+	flex-wrap: wrap; 
+	padding-left: 10px; /*внутр.отступ слева*/
+	letter-spacing: 1px; /*интервал между буквами*/
+}
+
+.logo_text {
+	padding-left: 20px;
+}
+
+/*.nav_container {
 	display: block;
 	content: "";
 	clear: both;
+}*/
+
+.nav_menu {
+	display: flex; /*меню стало в строку*/
+}
+
+.nav_container img {
+	position: relative;
+	top: 10px;
+	margin-right: 8px;
+}
+
+.tel {
+	font-size: 18px;
+	font-weight: 600;
+	padding-left: 770px;
+	letter-spacing: 1px;
 }
 
 .nav_link {
-	
 	padding: 10px 0;
    	margin-left: 35px;
 	font-size: 18px;
-	color: #fff;
-	text-decoration: none;
 	letter-spacing: 2px;
+	padding-right: 10px;
+
 }
 
 a:hover {
