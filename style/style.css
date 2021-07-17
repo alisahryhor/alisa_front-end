@@ -5,68 +5,35 @@
 }
 
 body {
-	font-family: Open Sans, sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
-.header_main_page {
-	background-color: #43afd0;
-	padding: 10px; 
-}
-
-.header_tel {
-	display: flex;
-	justify-content: space-between;
+a {
+    text-decoration: none;
 }
 
 .header {
-	display: flex;
-	justify-content: flex-start;
+	background-color: #43afd0;
 }
 
-.logo {
-	color: #fff;
-	font-size: 20px;
-	font-weight: 600;
+.header_container {
 	display: flex;
-	flex-wrap: wrap;
-	padding-left: 20px;
-	padding-top: 10px;
-	letter-spacing: 1px;
+	justify-content: space-between;
+	width: 1440px;
+	margin: auto;
+	padding: 20px 10px;
 }
 
 .nav_container {
-	display: flex;
-	justify-content: flex-end;
+	display: block;
+	content: "";
+	clear: both;
 }
 
-.tel {
-	font-size: 18px;
-	font-weight: 600;
-	padding-right: 6px;
-	padding-top: 30px;
-	letter-spacing: 1px;
-}
-
-.nav_container img {
-	position: relative;
-	top: 10px;
-	margin-right: 8px;
-}
-
-.nav_menu {
-	display: flex;
-	justify-content: flex-end;
-}
-
-ul li {
-	display: inline-block;
-	list-style-type: none;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
-}
-
-ul li a {
+.nav_link {
+	
+	padding: 10px 0;
+   	margin-left: 35px;
 	font-size: 18px;
 	color: #fff;
 	text-decoration: none;
@@ -75,3 +42,4 @@ ul li a {
 
 a:hover {
 	color: #434f4f;
+}
