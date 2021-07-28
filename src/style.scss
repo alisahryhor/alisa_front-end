@@ -1,0 +1,13 @@
+$baseColor: #43afd0;
+
+body {
+  color: red;
+}
+
+.header {
+  background-color: $baseColor;
+}
+
+h1 {
+  background-color: $baseColor;
+}
